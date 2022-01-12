@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:layout_marginTop="10dp"
+              android:text="Form Pembelian"
+              android:textAlignment="center"
+              android:textColor="@color/black"
+              android:textStyle="bold" />
+      </LinearLayout>
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Nama Pembeli \t\t:" />
+
+              <EditText
+                  android:id="@+id/nama"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Masukan nama" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Judul E-Book \t\t\t:" />
+
+              <EditText
+                  android:id="@+id/buku"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Masukan judul e-book" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Jumlah Beli \t\t\t\t:" />
+
+              <EditText
+                  android:id="@+id/jumlah"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number"
+                  android:hint="Masukan jumlah buku"/>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Harga RP.\t\t\t\t\t\t\t:" />
+
+              <EditText
+                  android:id="@+id/harga"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number"
+                  android:hint="Masukan jumlah harga"/>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Uang Beli RP.\t\t\t\t:" />
+
+              <EditText
+                  android:id="@+id/bayar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number"
+                  android:hint="Masukan jumlah uang"/>
+
+              <Button
+                  android:id="@+id/proses"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="proses"/>
+
+              <TextView
+                  android:id="@+id/hasil"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=""/>
+
+              <Button
+                  android:id="@+id/reset"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Reset Data" />
+
+              <Button
+                  android:id="@+id/exit"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Keluar" />
+
+          </LinearLayout>
+
+      </ScrollView>
+
+  </LinearLayout>
+
+</LinearLayout>
